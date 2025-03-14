@@ -25,6 +25,7 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  
 }
 
 #list {
@@ -34,4 +35,17 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+
+ 
 }
+
+#sort-tasks{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+li button{
+  margin-left: 10px;
+  font-size: 15px;
+}
+
