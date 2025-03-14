@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => { //makes sure the script only runs after the HTML has fully loaded
-  let form = document.querySelector("form") //selects the form where the user enters tasks
+  let form = document.getElementById("create-task-form") //selects the form where the user enters tasks
+
   let sortButton = document.getElementById("sort-tasks"); //selects the "sort by priority" button
 
 
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => { //makes sure the script on
 
 
     //extracting user inputs
-    let taskDescription = e.target.newtask.value; //e.target refers to the element that triggered the event, newtask is the description input id, value retrieves the text the user entered
+    let taskDescription = document.getElementById("new-task-description").value; //new-task-description is the description input id, value retrieves the text the user entered
     let user = document.getElementById("user").value; //gets users name
     let duration = document.getElementById("duration").value; //gets task duration
     let dueDate = document.getElementById("due-date").value; // gets task due date
